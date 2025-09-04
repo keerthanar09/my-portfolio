@@ -2,7 +2,7 @@
 export default function Research() {
   return (
     <main className="p-6 max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">My Research Work</h1>
+      <h1 className="text-3xl font-bold mb-6">Articles</h1>
       <ul className="space-y-4">
         <li className="text-blue-100">
           <strong className="text-xl text-blue-300">Title: Agentic AI + LLM Powered Document Retrieval System.</strong> <br />
