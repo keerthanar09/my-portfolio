@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <nav className="bg-linear-to-t from-grey-500 to-sky-500 shadow p-4 flex justify-center space-x-6 text-white">
           <Link href="/">Home</Link>
-          <Link href="/research">Blogs and Articles</Link>
+          <Link href="/research">Blogs, Articles and Reports</Link>
           <Link href="/projects">Projects</Link>
           <Link href="/contact">Contact</Link>
         </nav>
