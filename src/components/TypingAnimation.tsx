@@ -54,7 +54,7 @@ export default function TypingAnimation() {
   return (
     <h1
       className="text-2xl md:text-4xl font-mono space-x-2 text-center  
-                 bg-gradient-to-r from-blue-400 via-blue-100 to-blue-800
+                 bg-gradient-to-r from-green-400 via-green-100 to-green-800
                  bg-clip-text text-transparent"
     >
       {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}

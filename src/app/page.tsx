@@ -36,7 +36,7 @@ export default function Home() {
           href="/resume.pdf"
           download
           style={{
-            backgroundColor: "#0070f3",
+            backgroundColor: "#072f0aff",
             color: "#fff",
             padding: "10px 20px",
             borderRadius: "5px",
