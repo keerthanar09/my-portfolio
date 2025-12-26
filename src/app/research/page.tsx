@@ -5,6 +5,25 @@ export default function Research() {
       <h1 className="text-3xl font-bold mb-6">Reports</h1>
       <ul className="space-y-4">
         <li className="text-green-100">
+          <strong className="text-xl text-green-300">Title: Smart Surveillance System for Public Mental Health Wellbeing.</strong> <br />
+          <strong>About:</strong> Existing Smart Surveillance Systems usually are only designed for one task such as violence detection, or extract only one feature for analysis, thereby missing a lot of important context and data that could not only drastically improve the results of the application, but also provide in-depth analysis of the scene that humans alone cannot achieve. This is exactly what the Smart Surveillance System for Public Mental Wellbeing tries to achieve. This application makes use of lightweight, accurate and privacy preserving models to analyze various features detected in a surveillance footage, and provide a dashboard that updates in real time and not only reports anomalies, but also keeps track of both positive and negative states of the area, and provides an explained, in-depth analysis of the data collected. <br />
+          <div style={{ textAlign: "center", marginTop: "40px" }}>
+          <a
+            href="/papers/SmartSurveillanceSystem.pdf"
+            download
+            style={{
+              backgroundColor: "#008129ff",
+              color: "#fff",
+              padding: "10px 20px",
+              borderRadius: "5px",
+              textDecoration: "none",
+            }}
+          >
+            Download PDF
+          </a>
+        </div>
+        </li>
+        <li className="text-green-100">
           <strong className="text-xl text-green-300">Title: Agentic AI + LLM Powered Document Retrieval System.</strong> <br />
           <strong>About:</strong> This article explores a possible solution that overcomes the issues inherent to 
           LLMs to a high degree, making use of recent technological advancements such as agentic AI and RAG, along with some
@@ -28,29 +47,7 @@ export default function Research() {
         </div>
         </li>
 
-        <li className="text-green-100">
-          <strong className="text-xl text-green-300">Title: AI Powered Public Mental Health Tracker.</strong> <br />
-          <strong>About:</strong> AI Driven Public Mental Health Tracker aims to create a preventative 
-          solution for a group of people, rather than focusing on an individual. With the help of 
-          emerging Machine Learning technologies, this project aims to detect and accurately analyse 
-          the aggregated mental health of the public, and provide the possible cause of this mental 
-          state. This article provides an explorative literature survey on past, related technologies. <br />
-          <div style={{ textAlign: "center", marginTop: "40px" }}>
-          <a
-            href="/papers/Major-project-report-body-1.pdf"
-            download
-            style={{
-              backgroundColor: "#008129ff",
-              color: "#fff",
-              padding: "10px 20px",
-              borderRadius: "5px",
-              textDecoration: "none",
-            }}
-          >
-            Download PDF
-          </a>
-        </div>
-        </li>
+      
         {/* Add more entries */}
       </ul>
     </main>
