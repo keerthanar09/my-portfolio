@@ -47,7 +47,6 @@ const FloatingSpotifyPlayer: React.FC<FloatingSpotifyPlayerProps> = ({ url, song
           width="300"
           height="80"
           allow="autoplay; encrypted-media"
-          allowTransparency
           title="Spotify Player"
           style={{ border: "none", marginLeft: "8px" }}
         ></iframe>
