@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0f1a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -12,15 +12,117 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
+
+/* Hide scrollbar everywhere but keep scroll functionality */
+* {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE/Edge */
+}
+*::-webkit-scrollbar {
+  display: none;               /* Chrome/Safari */
+}
+
+/* Animated background */
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: #060d14;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* ensure page content sits above the background */
+body > nav,
+body > main,
+#__next nav,
+#__next main {
+  position: relative;
+  z-index: 1;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.55;
+  animation: floatShape ease-in-out infinite alternate;
+}
+
+.shape-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #22c55e, #15803d);
+  top: -120px;
+  left: -100px;
+  animation-duration: 14s;
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #0ea5e9, #0369a1);
+  top: 35%;
+  right: -80px;
+  animation-duration: 18s;
+  animation-delay: -5s;
+}
+
+.shape-3 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #16a34a, #052e16);
+  bottom: -180px;
+  left: 25%;
+  animation-duration: 22s;
+  animation-delay: -10s;
+}
+
+.shape-4 {
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, #4ade80, #166534);
+  top: 15%;
+  left: 50%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation-duration: 16s;
+  animation-delay: -3s;
+}
+
+.shape-5 {
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #38bdf8, #075985);
+  bottom: 8%;
+  right: 15%;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation-duration: 20s;
+  animation-delay: -8s;
+}
+
+.shape-6 {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, #86efac, #14532d);
+  top: 55%;
+  left: 8%;
+  animation-duration: 12s;
+  animation-delay: -2s;
+}
+
+@keyframes floatShape {
+  0%   { transform: translate(0px, 0px) scale(1); }
+  33%  { transform: translate(40px, -50px) scale(1.08); }
+  66%  { transform: translate(-30px, 35px) scale(0.94); }
+  100% { transform: translate(25px, -20px) scale(1.04); }
+}
+
+
